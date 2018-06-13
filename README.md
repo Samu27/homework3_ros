@@ -70,6 +70,7 @@ Per visualizzare la pointcloud appena creata:
 pcl_viewer pointcloud.pcd
 ```
 
+
 ![Pointcloud](media/screenshot_pointcloud.png)
 
 ![Pointcloud3D](media/gif_pointcloud.gif)
@@ -93,14 +94,18 @@ pcl_viewer cloud_cluster_*
 
 ## Media
 
+Cluster euclideo con tolleranza 0.20:
 
-![Cluster_0.28](media/gif_cluster0.20.png)
+![Cluster_0.20](media/screenshot_t020.png)
 
-![Cluster_0.28_3D](media/gif_cluster0.20.png)
+![Cluster_0.20_3D](media/gif_t020.gif)
 
-![Cluster_0.50](media/gif_cluster0.50.png)
 
-![Cluster_0.50_3D](media/gif_cluster0.50.png)
+Cluster euclideo con tolleranza 0.50:
+
+![Cluster_0.50](media/screenshot_t050.png)
+
+![Cluster_0.50_3D](media/gif_t050.gif)
 
 
 ## Autore
