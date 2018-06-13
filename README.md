@@ -20,9 +20,10 @@ Homework3_ros si basa sul repository [ORB_SLAM2](https://github.com/raulmur/ORB_
 **File modificati**
 * `src/System.cc` è stata aggiunta la funzione savePCD (righe: 475-511), essa salva i punti della point cloud su file
 * `include/System.h` è stata aggiunta la dichiarazione della funzione savePCD (riga: 118)
-* `Examples/ROS/ORB_SLAM2/src/ros_stereo.cc` è stato aggiunto la chiamata della funzione sopra descritta (riga: 129)
+* `Examples/ROS/ORB_SLAM2/src/ros_stereo.cc` è stata aggiunta la chiamata della funzione sopra descritta (riga: 129)
 
 **File aggiunti**
+
 E' stata aggiunta la cartella cluster_extraction. Essa contiente due file:
 * `src/cluster_extraction.cpp` sorgente, clusterizza i punti della point cloud in base alla distanza Euclidea utilizzando un valore di soglia. Basato su [documentazione ufficiale pcl](http://www.pointclouds.org/documentation/tutorials/cluster_extraction.php)
 * `CMakeLists.txt` file cmake per la compilazione di cluster_extraction
@@ -30,7 +31,7 @@ E' stata aggiunta la cartella cluster_extraction. Essa contiente due file:
 
 ## Prerequisiti
 
-Le dipendenze sono le medesime del repository di partenza [ORB_SLAM2](https://github.com/raulmur/ORB_SLAM2#2-prerequisites)
+Le dipendenze sono le medesime del repository [ORB_SLAM2](https://github.com/raulmur/ORB_SLAM2#2-prerequisites).
 **Assicurarsi di aver seguito correttamente tutti i passi**.
 
 ## Compilazione
@@ -84,13 +85,12 @@ Dopo aver ottenuto il file .pcd, aprire un terminale. Spostarsi nella cartella `
 Note:
 * inserire il percorso corretto di `pointcloud.pcd`
 * l'ultimo parametro è la tolleranza. E' possibile ometterlo, valore di default: `0.28`
-* 
 
 Una volta terminato, verranno generati dei file `cloud_cluster_...`. Per visualizzarli, lanciare il comando:
 ```
 pcl_viewer cloud_cluster_*
 ```
-**Cancellare i cluster ogni volta che si vuole rieseguire il comando**
+**Nota: cancellare i cluster ogni volta che si vuole rieseguire il comando**
 
 ## Media
 
