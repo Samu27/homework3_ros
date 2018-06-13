@@ -39,7 +39,7 @@ Aprire un terminale, posizionarsi nella cartella `homework3_ros` ed eseguire `bu
 
 ## Esecuzione
 
-#### Esecuzione ORB_SLAM2
+### Esecuzione ORB_SLAM2
 E' necessaria avere una rosbag. Clicca [qui](http://robotics.ethz.ch/~asl-datasets/ijrr_euroc_mav_dataset/vicon_room1/V1_01_easy/V1_01_easy.bag) per scaricarne una.
 
 Sono necessari 3 terminali:
@@ -76,7 +76,7 @@ pcl_viewer pointcloud.pcd
 
 ![Pointcloud3D](media/gif_pointcloud.gif)
 
-#### Clusterizzazione
+### Clusterizzazione
 
 Dopo aver ottenuto il file .pcd, aprire un terminale. Spostarsi nella cartella `cluster_extraction/build` e lanciare il comando:
 ```
